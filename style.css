@@ -2,10 +2,10 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --sage: #8FAB8A;
-  --sage-light: #B5C9B1;
-  --sage-dark: #6B8F66;
-  --sage-pale: #D6E4D3;
+  --sage: #9DBB98;
+  --sage-light: #BDD4BA;
+  --sage-dark: #82A47D;
+  --sage-pale: #DCE9DA;
   --cream: #EDE8DC;
   --cream-dark: #D9D0BE;
   --brown: #2C1E10;
