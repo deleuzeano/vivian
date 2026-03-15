@@ -232,7 +232,7 @@ h3 {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #82A47D 0%, #9DBB98 40%, #8DB589 70%, #76A071 100%);
+  background: linear-gradient(160deg, #A8C4A4 0%, #9DBB98 45%, #A2BF9D 100%);
   z-index: 0;
 }
 
@@ -605,23 +605,23 @@ h3 {
 
 .btn-outline {
   display: inline-block;
-  color: var(--sage-dark);
+  color: var(--brown);
   padding: 0.85rem 2rem;
   font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  border: 1.5px solid var(--sage-dark);
-  background: rgba(130, 164, 125, 0.08);
+  border: 1.5px solid var(--cream-dark);
+  background: var(--cream);
   cursor: pointer;
   transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
 }
 
 .btn-outline:hover {
-  background: var(--sage-dark);
-  border-color: var(--sage-dark);
-  color: var(--white);
+  background: var(--cream-dark);
+  border-color: var(--cream-dark);
+  color: var(--brown);
   transform: translateY(-2px);
 }
 
