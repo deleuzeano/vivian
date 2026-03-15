@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivian Biazotti — Design de Celebrações</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <img src="images/logo.jpg" alt="Vivian Biazotti" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+      <a href="#portfolio" onclick="toggleMenu()">Portfólio</a>
+      <a href="#servicos" onclick="toggleMenu()">Serviços</a>
+      <a href="#contato" onclick="toggleMenu()">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <img src="images/logo.jpg" alt="Vivian Biazotti Design de Celebrações" class="hero-logo" />
+      <p class="hero-tagline">Celebrar é criar experiências</p>
+      <a href="#portfolio" class="btn-ghost">Ver Portfólio</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Rolar</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <span class="label">Sobre</span>
+          <h2>Decoração autoral,<br /><em>do moodboard ao cenário</em></h2>
+          <p>
+            Cada celebração é única — um reflexo de quem você é e do que mais ama.
+            Trabalho com design autoral, criando experiências visuais completas:
+            do conceito inicial ao cenário finalizado no dia do evento.
+          </p>
+          <p>
+            Infantil, adulto, eventos e mesas decoradas. Com atenção a cada detalhe,
+            transformo ideias em momentos inesquecíveis.
+          </p>
+          <div class="sobre-destaques">
+            <div class="destaque">
+              <span class="num">+100</span>
+              <span class="desc">Eventos realizados</span>
+            </div>
+            <div class="destaque">
+              <span class="num">5★</span>
+              <span class="desc">Avaliação dos clientes</span>
+            </div>
+            <div class="destaque">
+              <span class="num">100%</span>
+              <span class="desc">Design autoral</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-imgs">
+          <div class="sobre-img-principal">
+            <img src="images/foto21.jpg" alt="Decoração de evento" />
+          </div>
+          <div class="sobre-img-secundaria">
+            <img src="images/foto8.jpg" alt="Detalhes de mesa" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Portfólio</span>
+        <h2>Celebrações <em>que marcam</em></h2>
+        <p>Uma seleção de projetos autorais — cada um com identidade e história próprias.</p>
+      </div>
+
+      <div class="filtros">
+        <button class="filtro active" data-filter="all">Todos</button>
+        <button class="filtro" data-filter="moodboard">Moodboards</button>
+        <button class="filtro" data-filter="mesa">Mesas</button>
+        <button class="filtro" data-filter="detalhes">Detalhes</button>
+      </div>
+
+      <div class="gallery-masonry" id="gallery">
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto1.jpg" alt="Celebração" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto2.jpg" alt="Mesa decorada" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto3.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto4.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto5.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto6.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto7.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto8.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto9.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto10.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto11.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto12.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto13.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto14.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto15.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto16.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto17.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto18.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto19.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto20.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto21.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto22.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto23.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto24.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto25.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto26.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto27.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto28.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto29.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto30.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto31.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto32.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto33.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto34.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto35.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto36.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto37.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto38.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto39.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto40.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto41.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto42.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto43.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto44.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto45.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto46.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto47.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto48.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto49.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto50.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto51.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto52.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto53.jpg" alt="Moodboard" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="detalhes"><img src="images/foto54.jpg" alt="Detalhe" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="mesa"><img src="images/foto55.jpg" alt="Mesa" loading="lazy" /></div>
+        <div class="gallery-item" data-cat="moodboard"><img src="images/foto56.jpg" alt="Moodboard" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lb-close" onclick="closeLightbox()">&#10005;</button>
+    <button class="lb-prev" onclick="prevImg(event)">&#8592;</button>
+    <img id="lb-img" src="" alt="" />
+    <button class="lb-next" onclick="nextImg(event)">&#8594;</button>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <div class="section-header light">
+        <span class="label">Serviços</span>
+        <h2>Como posso <em>te ajudar</em></h2>
+      </div>
+      <div class="servicos-grid">
+        <div class="servico-card">
+          <div class="servico-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="36" height="32" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="14" y1="18" x2="34" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="14" y1="24" x2="28" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="14" y1="30" x2="22" y2="30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Moodboard &amp; Conceito</h3>
+          <p>Desenvolvemos juntos a identidade visual do seu evento — cores, texturas, referências e estilo que contam a sua história.</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 8v4M24 36v4M8 24h4M36 24h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Decoração Autoral</h3>
+          <p>Cada elemento é pensado e executado com exclusividade. Cenários únicos que transformam espaços em experiências sensoriais.</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 20h16M16 28h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="36" cy="34" r="6" fill="currentColor" opacity=".15" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M34 34l1.5 1.5L38 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Mesa Posta</h3>
+          <p>Montagem completa de mesas para eventos íntimos e grandes celebrações, com atenção especial a cada detalhe de louça, arranjo e papelaria.</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 38V20l12-10 12 10v18" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <rect x="18" y="28" width="12" height="10" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Eventos Infantis</h3>
+          <p>Festas temáticas criativas e afetivas para crianças — do conceito à execução, com elementos lúdicos e paleta pensada especialmente para o pequeno aniversariante.</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6l4.24 8.59L38 16.18l-7 6.82 1.65 9.62L24 28.1l-8.65 4.52L17 23l-7-6.82 9.76-1.59z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Eventos Adultos</h3>
+          <p>Aniversários, jantares temáticos, comemorações e reuniões sociais com estética sofisticada e personalidade marcante.</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 16h32v24H8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M16 16V12a8 8 0 0116 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="28" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Consultoria</h3>
+          <p>Para quem quer organizar o próprio evento com orientação profissional — moodboard, lista de fornecedores e suporte criativo na medida certa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRASE -->
+  <section class="frase-section">
+    <div class="container">
+      <blockquote>
+        &ldquo;Decoração autoral &bull; do moodboard ao cenário&rdquo;
+        <cite>— Vivian Biazotti</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Contato</span>
+        <h2>Vamos criar <em>juntos</em></h2>
+        <p>Compartilhe a data e o sonho do seu evento. Vamos conversar.</p>
+      </div>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <a href="https://www.instagram.com/vivianbiazotti" target="_blank" class="contato-link">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+            <span>@vivianbiazotti</span>
+          </a>
+          <p class="contato-desc">
+            Acompanhe os projetos no Instagram e envie uma mensagem direta para solicitar orçamento.
+          </p>
+          <a href="https://www.instagram.com/vivianbiazotti" target="_blank" class="btn-primary">Falar no Instagram</a>
+        </div>
+        <div class="contato-img">
+          <img src="images/foto15.jpg" alt="Decoração Vivian Biazotti" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <img src="images/logo.jpg" alt="Vivian Biazotti" class="footer-logo" />
+      <p>Vivian Biazotti — Design de Celebrações</p>
+      <p class="footer-sub">Infantil &bull; Adulto &bull; Eventos &bull; Mesa</p>
+      <a href="https://www.instagram.com/vivianbiazotti" target="_blank" class="footer-ig">@vivianbiazotti</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
