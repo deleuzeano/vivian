@@ -613,11 +613,14 @@ h3 {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   border: 1.5px solid var(--sage-dark);
-  transition: background 0.3s, color 0.3s, transform 0.2s;
+  background: rgba(130, 164, 125, 0.08);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
 }
 
 .btn-outline:hover {
   background: var(--sage-dark);
+  border-color: var(--sage-dark);
   color: var(--white);
   transform: translateY(-2px);
 }
